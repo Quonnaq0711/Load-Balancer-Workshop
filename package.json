@@ -1,0 +1,19 @@
+{
+  "name": "loadbalancerworkshop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:servers": "node servers/server1.js & node servers/server2.js & node servers/server3.js",
+    "start:balancer": "node balancer/balancer.js",
+    "run:client": "node client/client.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "http-proxy": "^1.18.1",
+    "node-fetch": "^3.3.2"
+  }
+}
